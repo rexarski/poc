@@ -1,0 +1,52 @@
+baseURL = "https://poc.rexarski.com/"
+languageCode = "en-us"
+theme = "terminal"
+pagination.pagerSize = 5
+
+# Required for Chroma and the custom syntax highlighting.
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  contentTypeName = "posts"
+  showMenuItems = 2
+  showLanguageSelector = false
+  fullWidthTheme = false
+  centerTheme = false
+  autoCover = true
+  showLastUpdated = false
+  readingTime = true
+  Toc = true
+
+[languages]
+  [languages.en]
+    title = "Proof of Concept"
+    subtitle = "Expendable experiments but documented."
+    keywords = "experiments, data-science, machine-learning"
+    copyright = "© 2025, rexarski"
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+    minuteReadingTime = "min read"
+    words = "words"
+
+    [languages.en.params.logo]
+      logoText = "PoC"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts"
